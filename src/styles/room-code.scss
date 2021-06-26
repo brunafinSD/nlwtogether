@@ -1,4 +1,4 @@
-.room-code{
+.room-code {
     height: 40px;
     border-radius: 8px;
     overflow: hidden;
@@ -7,7 +7,7 @@
     cursor: pointer;
     display: flex;
 
-    div{
+    div {
         height: 40px;
         background: #835afd;
         padding: 0 12px;
@@ -16,7 +16,7 @@
         align-items: center;
     }
 
-    span{
+    span {
         display: block;
         align-self: center;
         flex: 1;

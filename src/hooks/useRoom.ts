@@ -35,7 +35,6 @@ export function useRoom(roomId: string) {
 
     useEffect(() => {
         const roomRef = database.ref(`rooms/${roomId}`);
-        // modificar On pelo recurso Child Removed/Added...em vez de ouvir o value que recarrega a lista por completo 
         roomRef.on('value', room => {
             const databaseRoom = room.val();
             const firebaseQuestions: FirebaseQuestions = databaseRoom.questions ?? {};
@@ -58,5 +57,5 @@ export function useRoom(roomId: string) {
         }
     }, [roomId, user?.id]);
 
-    return { questions, title } 
+    return { questions, title }
 }

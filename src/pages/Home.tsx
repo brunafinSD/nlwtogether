@@ -10,30 +10,30 @@ import { database } from '../services/firebase';
 
 export function Home() {
     const history = useHistory();
-    const {user, signInWithGoogle} = useAuth();
+    const { user, signInWithGoogle } = useAuth();
     const [roomCode, setRoomCode] = useState('');
 
-    async function handleCreateRoom(){
-        if(!user){
+    async function handleCreateRoom() {
+        if (!user) {
             await signInWithGoogle();
         }
         history.push('/rooms/new');
     }
 
-    async function handleJoinRoom(event: FormEvent){
+    async function handleJoinRoom(event: FormEvent) {
         event.preventDefault();
-        if(roomCode.trim() === ''){
+        if (roomCode.trim() === '') {
             return;
         }
 
         const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
-        if(!roomRef.exists()){
+        if (!roomRef.exists()) {
             alert('Room does not exists.');
             return;
         }
 
-        if(roomRef.val().closedAt){
+        if (roomRef.val().closedAt) {
             alert('Room already closed.');
             return;
         }
@@ -41,7 +41,7 @@ export function Home() {
         history.push(`/rooms/${roomCode}`);
     }
 
-    return(
+    return (
         <div id="page-auth">
             <aside>
                 <img src={IlustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
@@ -50,7 +50,7 @@ export function Home() {
             </aside>
             <main>
                 <div className="main-content">
-                    <img src={logoImg} alt="Letmeask"/>
+                    <img src={logoImg} alt="Letmeask" />
                     <button onClick={handleCreateRoom} className="create-room">
                         <img src={googleIconImg} alt="Logo do Google" />
                         Crie sua sala com o Google
