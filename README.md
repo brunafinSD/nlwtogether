@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/79814692/123530270-b7c9e100-d6ce-11eb-9977-8eeff3292493.png)
 
 -> Sobre o Projeto: 
-Letmeask tem a proposta de gerenciar a demanda das perguntas que você recebe em suas lives. Você poderá criar uma sala e compartilhar o código para que seus convidados acessem e envie as perguntas!
+Letmeask tem a proposta de gerenciar a demanda das perguntas que você recebe em suas lives. Você poderá criar uma sala e compartilhar o código para que seus convidados acessem e enviem perguntas!
 
 Este é um projeto desenvolvido durante a Next Level Week Together, apresentada dos dias 20 a 27 de Junho de 2021.
 
