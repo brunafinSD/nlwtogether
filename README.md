@@ -2,6 +2,9 @@
 
 # Letmeask
 
+## Importante: link fictício, somente para estudo pessoal e teste 
+exemplo da aplicação no ar: https://letmeask-ac9dc.web.app/
+
 ## Sobre o Projeto:
 Letmeask tem a proposta de gerenciar a demanda das perguntas que você recebe em suas lives. Você poderá criar uma sala e compartilhar o código para que seus convidados acessem e enviem perguntas!
 
@@ -17,8 +20,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## Como executar
 Clone o projeto e acesse a pasta do mesmo.
 
-$ git clone https://github.com/brunafinSD/nlwtogether.git
-$ cd nlwtogether
+- $ git clone https://github.com/brunafinSD/nlwtogether.git
+- $ cd nlwtogether
 
 Para iniciá-lo, siga os passos abaixo:
 
@@ -26,7 +29,7 @@ Para iniciá-lo, siga os passos abaixo:
 $ npm install
 
 ## Iniciar o projeto
-$ npm start
-A aplicação estará disponível no seu browser pelo endereço http://localhost:3000.
+- $ npm start
+- A aplicação estará disponível no seu browser pelo endereço http://localhost:3000.
 Obs.: Será necessário criar uma conta no Firebase e um projeto para disponibilizar um Realtime Database.
 Regras do banco de dados no arquivo database.rules.json
